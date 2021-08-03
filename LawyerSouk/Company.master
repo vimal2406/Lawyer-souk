@@ -1,0 +1,226 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Company.master.cs" Inherits="User" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title></title>
+     <!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Employee power Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Meta tag Keywords -->
+      <script type="text/javascript" language="javascript">
+          function character(evt) {
+              evt = (evt) ? evt : event;
+              var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode :
+    ((evt.which) ? evt.which : 0));
+              if (charCode > 31 && (charCode < 65 || charCode > 90) &&
+    (charCode < 97 || charCode > 122)) {
+                  alert("Enter only characters");
+                  return false;
+              }
+              return true;
+          }
+    </script> 
+   
+   
+   
+    <script type="text/javascript">
+
+        function CheckNumericKeyInfo(char1, mozChar) {
+            if (mozChar != null) { // Look for a Mozilla-compatible browser
+                if ((mozChar >= 48 && mozChar <= 57) || char1 == 8)
+                    RetVal = true;
+                else {
+                    RetVal = false;
+                }
+            }
+            else { // Must be an IE-compatible Browser
+                if ((char1 >= 48 && char1 <= 57) || char1 == 8) RetVal = true;
+                else {
+                    RetVal = false;
+                }
+            }
+            return RetVal;
+        }
+    </script>
+	<link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+    
+	<!-- banner slider css file -->
+	<link href="css/JiSlider.css" rel="stylesheet">
+	<!-- //banner slider css file -->
+
+	<!-- css files -->
+	<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+	<link rel="stylesheet" href="css/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+	<!-- //js -->	
+	
+
+	<!-- tabs -->
+	<script src="js/easy-responsive-tabs.js"></script>
+	<script>
+	    $(document).ready(function () {
+	        $('#horizontalTab').easyResponsiveTabs({
+	            type: 'default', //Types: default, vertical, accordion           
+	            width: 'auto', //auto or any width like 600px
+	            fit: true,   // 100% fit in a container
+	            closed: 'accordion', // Start closed if in accordion view
+	            activate: function (event) { // Callback function if tab is switched
+	                var $tab = $(this);
+	                var $info = $('#tabInfo');
+	                var $name = $('span', $info);
+	                $name.text($tab.text());
+	                $info.show();
+	            }
+	        });
+	        $('#verticalTab').easyResponsiveTabs({
+	            type: 'vertical',
+	            width: 'auto',
+	            fit: true
+	        });
+	    });
+	</script>
+	<!--//tabs-->
+	
+	<!-- for-Testimonials -->
+	<!-- required-js-files-->
+	<link href="css/owl.carousel.css" rel="stylesheet">
+		<script src="js/owl.carousel.js"></script>
+			<script>
+		$(document).ready(function() {
+		  $("#owl-demo").owlCarousel({
+			items : 1,
+			lazyLoad : true,
+			autoPlay : true,
+			navigation : false,
+			navigationText :  false,
+			pagination : true,
+		  });
+		});
+		</script>
+	<!--//required-js-files-->
+	<!-- //for-Testimonials -->
+
+	<!-- start-smoth-scrolling -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+	    jQuery(document).ready(function ($) {
+	        $(".scroll").click(function (event) {
+	            event.preventDefault();
+	            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+	        });
+	    });
+	</script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+	    $(document).ready(function () {
+	        /*
+	        var defaults = {
+	        containerID: 'toTop', // fading element id
+	        containerHoverID: 'toTopHover', // fading element hover id
+	        scrollSpeed: 1200,
+	        easingType: 'linear' 
+	        };
+	        */
+
+	        $().UItoTop({ easingType: 'easeOutQuart' });
+
+	    });
+	</script>
+	<!-- //here ends scrolling icon -->
+	<!-- start-smoth-scrolling -->
+	
+<!-- //js-scripts -->
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+	<div class="container">
+   
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="index.html">
+				<i class="fas fa-boxes"></i>LAWYER SOUK
+			</a>
+			<button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto text-center">
+					<li class="nav-item active  mr-lg-3">
+						<a class="nav-link" href="Home.aspx">CompanyHome
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item  mr-lg-3">
+						<a class="nav-link" href="UploadJobdetail.aspx">UploadJob</a>
+					</li>
+					<li class="nav-item  mr-lg-3">
+						<a class="nav-link" href="ViewContractRelease.aspx">ReleaseContractInfo</a>
+					</li>
+                      <li class="nav-item dropdown mr-lg-3 active">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="false">
+							Services
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="CompanyViewJobRequestStatus.aspx">ViewRequest</a>
+							<a class="dropdown-item" href="error.html">Accept/RejectApplication</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="ViewJobRequestStatus.aspx">UploadScheduleInterView</a>
+                            <a class="dropdown-item" href="UpdateInterViewStatus.aspx">UploadScheduleInterViewStatus</a>
+						</div>
+					</li>
+    
+           
+				</ul>
+              
+				<div class="buttons">
+				<asp:Button ID="Button4" runat="server" class="btn btn-info btn-lg-block w3ls-btn px-4 text-uppercase mr-2" Text="Logout" CausesValidation="false" onclick="Button2_Click"></asp:Button>
+					
+				</div>
+				
+			</div>
+          
+				
+				
+			</div>
+		</nav>
+ 
+	</div>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+         <div class="container">
+  <section class="copyright py-4">
+	<div class="agileits_w3layouts-copyright text-center">
+		<p> © 2021 Lawyer Souk. All Rights Reserved |  </a>
+		</p>
+	</div>
+</section>
+</div>
+ 
+    </form>
+</body>
+</html>

@@ -1,0 +1,250 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="User - Copy.master.cs" Inherits="User" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title></title>
+     <!-- Meta tag Keywords -->
+     	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Meta tag Keywords -->
+	
+	<!-- css files -->
+	<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+	<link rel="stylesheet" href="css/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Employee power Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Meta tag Keywords -->
+      <script type="text/javascript" language="javascript">
+          function character(evt) {
+              evt = (evt) ? evt : event;
+              var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode :
+    ((evt.which) ? evt.which : 0));
+              if (charCode > 31 && (charCode < 65 || charCode > 90) &&
+    (charCode < 97 || charCode > 122)) {
+                  alert("Enter only characters");
+                  return false;
+              }
+              return true;
+          }
+    </script> 
+    <!-- js -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+	<!-- //js -->	
+	
+	<!-- Gallery js file -->
+		<script src="js/jquery.picEyes.js"></script>
+		<script>
+		    $(function () {
+		        //picturesEyes($('.demo li'));
+		        $('.demo li').picEyes();
+		    });
+		</script>
+	<!-- //Gallery js file -->
+
+    <script src="js/SmoothScroll.min.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.js" type="text/javascript"></script>
+    <script src="js/move-top.js" type="text/javascript"></script>
+    <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="js/easy-responsive-tabs.js" type="text/javascript"></script>
+    <script src="js/easing.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/jquery.countup.js" type="text/javascript"></script>
+    <script src="js/jquery.picEyes.js" type="text/javascript"></script>
+    <script src="js/JiSlider.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	    jQuery(document).ready(function ($) {
+	        $(".scroll").click(function (event) {
+	            event.preventDefault();
+	            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+	        });
+	    });
+	</script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+	    $(document).ready(function () {
+	        /*
+	        var defaults = {
+	        containerID: 'toTop', // fading element id
+	        containerHoverID: 'toTopHover', // fading element hover id
+	        scrollSpeed: 1200,
+	        easingType: 'linear' 
+	        };
+	        */
+
+	        $().UItoTop({ easingType: 'easeOutQuart' });
+
+	    });
+	</script>
+	<!-- //here ends scrolling icon -->
+	<!-- start-smoth-scrolling -->
+	
+<!-- //js-scripts -->
+   
+    <script type="text/javascript">
+
+        function CheckNumericKeyInfo(char1, mozChar) {
+            if (mozChar != null) { // Look for a Mozilla-compatible browser
+                if ((mozChar >= 48 && mozChar <= 57) || char1 == 8)
+                    RetVal = true;
+                else {
+                    RetVal = false;
+                }
+            }
+            else { // Must be an IE-compatible Browser
+                if ((char1 >= 48 && char1 <= 57) || char1 == 8) RetVal = true;
+                else {
+                    RetVal = false;
+                }
+            }
+            return RetVal;
+        }
+    </script>
+  <style type="text/css">
+.dropbtn {
+ background-color: White;
+  color: Black;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: White;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: White;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+     </style>
+	<link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+	
+	<!-- banner slider css file -->
+	<link href="css/JiSlider.css" rel="stylesheet"/>
+	<!-- //banner slider css file -->
+
+	<!-- css files -->
+	<link rel="stylesheet" href="css/bootstrap.css"/> <!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+	<link rel="stylesheet" href="css/fontawesome-all.css"/> <!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+ <header>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="index.html">
+				<i class="fas fa-boxes"></i>LAWYER SOUK
+			</a>
+			<button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto text-center">
+					<li class="nav-item active  mr-lg-3">
+						<a class="nav-link" href="Home.aspx">UserHome
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item  mr-lg-3">
+						<a class="nav-link" href="UploadJobContractInfo.aspx">UploadDetails</a>
+					</li>
+					<li class="nav-item  mr-lg-3">
+						<a class="nav-link" href="PostResume.aspx">UploadResume</a>
+					</li>
+                    <div class="dropdown">
+  <button class="nav-item  mr-lg-3">View</button>
+  <div class="dropdown-content">
+   <a class="dropdown-item" href="ViewRecentUploadJob.aspx">ViewVacancy</a>
+							<a class="dropdown-item" href="ViewJobStatus.aspx">SendRequest</a>
+                            <a class="dropdown-item" href="ViewJobRequestSendStatus.aspx">ViewsentRequestStatus</a>
+                            	<a class="dropdown-item" href="EmployeViewJobRequestStatus.aspx">Accept/RejectJobRequest</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="EmployeeViewInterViewStatus.aspx">Status</a>
+  </div>
+</div>
+
+                  
+                    <li class="nav-item">
+						<a class="nav-link" href="ViewCompanyInfo.aspx">ViewLawyerInfo</a>
+					</li>
+				</ul>
+				<div class="buttons">
+				                    <asp:Button ID="Button4" runat="server" class="btn btn-info btn-lg-block w3ls-btn px-4 text-uppercase mr-2" Text="Logout" CausesValidation="false" onclick="Button2_Click"></asp:Button>
+					
+					
+				</div>
+				
+			</div>
+		</nav>
+	</div>
+</header>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <div class="container">
+  <section class="copyright py-4">
+	<div class="agileits_w3layouts-copyright text-center">
+		<p>© 2021 Lawyer Souk. All Rights Reserved |  </a>
+		</p>
+	</div>
+</section>
+</div>
+    </form>
+</body>
+</html>
